@@ -4,7 +4,7 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <p className="text-lg font-bold">William SART</p>
           <p className="text-sm">
-            Copyright © {new Date().getFullYear()} - Tous droits réservés
+            Copyright © 2024 - Tous droits réservés
           </p>
         </div>
       </footer>
