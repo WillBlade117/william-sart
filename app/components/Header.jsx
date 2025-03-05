@@ -20,6 +20,12 @@ export default function Header() {
                     >
                         Projets
                     </a>
+                    <a
+                        href="#contact"
+                        className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+                    >
+                        Contact
+                    </a>
                 </div>
                 <div className="flex gap-4">
                     <Link
