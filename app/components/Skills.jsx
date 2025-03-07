@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   const skills = [
@@ -42,20 +43,43 @@ const Skills = () => {
 
   return (
     <section id="skills" className="mt-20 pt-20 w-full max-w-3xl">
-      <h2 className="text-5xl font-bold">Pourquoi je suis<br /><span className="text-fuchsia-500">un développeur complet</span></h2>
+      {/* Titre avec animation au scroll */}
+      <motion.h2
+        className="text-5xl font-bold"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        Pourquoi je suis<br />
+        <span className="text-fuchsia-500">un développeur complet</span>
+      </motion.h2>
+
+      {/* Liste des compétences avec animations au scroll */}
       <div className="mt-10 flex flex-col gap-4">
         {skills.map((skill, index) => (
-          <div
+          <motion.div
             key={index}
-            className="p-4 border rounded-lg shadow-md flex flex-col md:flex-row transition-transform duration-300 hover:scale-105 hover:bg-fuchsia-100 hover:border-fuchsia-500"
+            className="p-4 border rounded-lg shadow-md flex flex-col md:flex-row transition-transform duration-200 hover:bg-fuchsia-100 hover:border-fuchsia-200"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.2, ease: "easeInOut" },
+            }}
+            whileTap={{
+              scale: 1,
+            }}
           >
-            <h3 className="text-xl font-medium md:w-1/3 flex items-center justify-center md:text-left">
+            <h3 className="text-xl font-medium md:w-1/3 flex items-center justify-center md:text-left ">
               {skill.title}
             </h3>
             <p className="mt-2 md:mt-0 text-gray-500 md:w-2/3 text-left">
               {skill.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

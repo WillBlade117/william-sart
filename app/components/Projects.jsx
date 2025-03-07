@@ -1,14 +1,28 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const ProjectCard = ({ title, description, link }) => (
-  <div className="p-4 border rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:bg-fuchsia-100 hover:border-fuchsia-500">
+// Composant pour afficher chaque carte de projet
+const ProjectCard = ({ title, description, link, delay }) => (
+  <motion.div
+    className="p-4 border rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:bg-fuchsia-100 hover:border-fuchsia-200"
+    initial={{ opacity: 0, scale: 0.8 }} // Au départ, l'élément est petit et transparent
+    whileInView={{ opacity: 1, scale: 1 }} // Lorsqu'il devient visible, l'élément reprend sa taille normale
+    transition={{
+      delay: delay, // Chaque carte a un délai différent pour apparaître
+      duration: 0.6, // Durée de l'animation d'apparition
+      type: "spring", // Pour un effet de ressort, plus naturel
+      stiffness: 100, // Rigidité du ressort
+      damping: 20, // Damping pour la fluidité
+    }}
+    viewport={{ once: true }} // Animation au premier passage dans la vue
+  >
     <h3 className="mt-2 text-xl font-medium">{title}</h3>
     <p className="mt-6 text-gray-500">{description}</p>
-    <Link href={link} className="text-fuchsia-500 hover:underline">
-      Voir la stack
+    <Link href={link} className="text-fuchsia-500 font-medium hover:underline">
+      Voir
     </Link>
-  </div>
+  </motion.div>
 );
 
 const Projects = () => {
@@ -35,14 +49,24 @@ const Projects = () => {
 
   return (
     <section id="projets" className="mt-20 pt-20 w-full max-w-3xl">
-      <h2 className="text-5xl font-bold">
+      <motion.h2
+        className="text-5xl font-bold"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Explorez mes projets en
         <br />
         <span className="text-fuchsia-500">développement web et mobile</span>
-      </h2>
+      </motion.h2>
       <div className="mt-10 grid gap-4 md:grid-cols-2 gap-y-10 gap-x-10">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard
+            key={index}
+            {...project}
+            delay={index * 0.2} // Delay pour chaque projet
+          />
         ))}
       </div>
     </section>
