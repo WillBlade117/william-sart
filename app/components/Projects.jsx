@@ -5,17 +5,21 @@ import Link from 'next/link';
 // Composant pour afficher chaque carte de projet
 const ProjectCard = ({ title, description, link, delay }) => (
   <motion.div
-    className="p-4 border rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:bg-fuchsia-100 hover:border-fuchsia-200"
-    initial={{ opacity: 0, scale: 0.8 }} // Au départ, l'élément est petit et transparent
-    whileInView={{ opacity: 1, scale: 1 }} // Lorsqu'il devient visible, l'élément reprend sa taille normale
+    className="p-4 border-4 rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:bg-fuchsia-100 hover:border-fuchsia-200"
+    initial={{ opacity: 0, scale: 0.3 }}
+    whileInView={{ opacity: 1, scale: 1 }}
     transition={{
-      delay: delay, // Chaque carte a un délai différent pour apparaître
-      duration: 0.6, // Durée de l'animation d'apparition
-      type: "spring", // Pour un effet de ressort, plus naturel
-      stiffness: 100, // Rigidité du ressort
-      damping: 20, // Damping pour la fluidité
+      delay: delay,
+      duration: 0.6,
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
     }}
-    viewport={{ once: true }} // Animation au premier passage dans la vue
+    whileHover={{
+      scale: 1.05,
+      transition: { duration: 0.2, ease: "easeInOut" },
+    }}
+    viewport={{ once: true }}
   >
     <h3 className="mt-2 text-xl font-medium">{title}</h3>
     <p className="mt-6 text-gray-500">{description}</p>
@@ -65,7 +69,7 @@ const Projects = () => {
           <ProjectCard
             key={index}
             {...project}
-            delay={index * 0.2} // Delay pour chaque projet
+            delay={index * 0.2}
           />
         ))}
       </div>

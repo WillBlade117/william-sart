@@ -55,12 +55,12 @@ const Skills = () => {
         <span className="text-fuchsia-500">un développeur complet</span>
       </motion.h2>
 
-      {/* Liste des compétences avec animations au scroll */}
+      {/* Liste des compétences */}
       <div className="mt-10 flex flex-col gap-4">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="p-4 border rounded-lg shadow-md flex flex-col md:flex-row transition-transform duration-200 hover:bg-fuchsia-100 hover:border-fuchsia-200"
+            className="p-4 border-4 rounded-lg shadow-md flex flex-col md:flex-row transition-transform duration-200 hover:bg-fuchsia-100 hover:border-fuchsia-200"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: index * 0.2 }}
