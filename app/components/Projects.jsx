@@ -2,33 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-// Composant pour afficher chaque carte de projet
-const ProjectCard = ({ title, description, link, delay }) => (
-  <motion.div
-    className="p-4 border-4 rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:bg-fuchsia-100 hover:border-fuchsia-200"
-    initial={{ opacity: 0, scale: 0.3 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{
-      delay: delay,
-      duration: 0.6,
-      type: "spring",
-      stiffness: 100,
-      damping: 20,
-    }}
-    whileHover={{
-      scale: 1.05,
-      transition: { duration: 0.2, ease: "easeInOut" },
-    }}
-    viewport={{ once: true }}
-  >
-    <h3 className="mt-2 text-xl font-medium">{title}</h3>
-    <p className="mt-6 text-gray-500">{description}</p>
-    <Link href={link} className="text-fuchsia-500 font-medium hover:underline">
-      Voir
-    </Link>
-  </motion.div>
-);
-
 const Projects = () => {
   const projects = [
     {
@@ -66,11 +39,20 @@ const Projects = () => {
       </motion.h2>
       <div className="mt-10 grid gap-4 md:grid-cols-2 gap-y-10 gap-x-10">
         {projects.map((project, index) => (
-          <ProjectCard
+          <motion.div
             key={index}
-            {...project}
-            delay={index * 0.2}
-          />
+            className="p-4 border-4 rounded-lg shadow-md flex flex-col md:flex-col md:col-span-1 bg-white"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.1 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="mt-2 text-xl font-medium text-center md:text-left">{project.title}</h3>
+            <p className="mt-4 text-gray-500 text-center md:text-left">{project.description}</p>
+            <Link href={project.link} className="text-fuchsia-500 font-medium hover:underline text-center mt-4">
+              Voir
+            </Link>
+          </motion.div>
         ))}
       </div>
     </section>
