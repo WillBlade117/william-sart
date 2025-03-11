@@ -84,22 +84,7 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
-              <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-600">
-                Entreprise
-              </label>
-              <div className="mt-2.5">
-                <input
-                  name="company"
-                  type="text"
-                  value={formData.company}
-                  onChange={handleChange}
-                  autoComplete="organization"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-fuchsia-500"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
+            <div>
               <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-600">
                 Email
               </label>
@@ -111,6 +96,21 @@ export default function ContactForm() {
                   onChange={handleChange}
                   autoComplete="email"
                   required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-fuchsia-500"
+                />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-600">
+                Entreprise
+              </label>
+              <div className="mt-2.5">
+                <input
+                  name="company"
+                  type="text"
+                  value={formData.company}
+                  onChange={handleChange}
+                  autoComplete="organization"
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-fuchsia-500"
                 />
               </div>
