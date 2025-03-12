@@ -5,7 +5,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Suspense, useRef } from "react";
 
 const Avatar3D = () => {
-  const { scene } = useGLTF("/avatar1.glb");
+  const { scene } = useGLTF("/avatar2.glb");
   const avatarRef = useRef();
 
   useFrame(() => {

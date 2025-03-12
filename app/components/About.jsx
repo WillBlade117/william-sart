@@ -9,7 +9,6 @@ const About = () => (
       id="about"
       className="mt-20 pt-20 w-full max-w-2xl"
     >
-      {/* Titre avec animation au scroll */}
       <motion.h2
         className="text-5xl font-bold"
         initial={{ opacity: 0, y: -40 }}
@@ -23,7 +22,6 @@ const About = () => (
 
       <div className='flex flex-col md:flex-row'>
       <div>
-      {/* Paragraphe avec animation au scroll */}
       <motion.p
         className="mt-6 text-lg text-gray-500"
         initial={{ opacity: 0, y: 20 }}
@@ -56,7 +54,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* Bouton LinkedIn avec animation au scroll et effets de survol */}
     <motion.div
       className="mt-6"
       initial={{ opacity: 0 }}
