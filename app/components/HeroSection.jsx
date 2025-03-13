@@ -44,13 +44,16 @@ const HeroSection = () => (
         <Link href="#contact">Me contacter</Link>
       </motion.div>
 
-      <motion.div
-        className="px-5 py-3 border border-fuchsia-500 text-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-white"
-        whileHover={{ scale: 1.1, rotate: -5 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link href="/cv.pdf">Télécharger mon CV</Link>
-      </motion.div>
+      <a href="/CV_william_sart.pdf" download>
+        <motion.div
+          className="px-5 py-3 border border-fuchsia-500 text-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-white"
+          whileHover={{ scale: 1.1, rotate: -5 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Télécharger mon CV
+        </motion.div>
+      </a>
+
     </div>
   </>
 );

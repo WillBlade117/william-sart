@@ -20,10 +20,10 @@ const About = () => (
         <span className="text-fuchsia-500">Allons-y !</span>
       </motion.h2>
 
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row max-h-[700px]'>
       <div>
       <motion.p
-        className="mt-6 text-lg text-gray-500"
+        className="mt-6 text-lg text-gray-500 md:min-w-[380px]"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -48,7 +48,7 @@ const About = () => (
         envers l'excellence font de moi un atout pour tout projet technologique.
       </motion.p>
       </div>
-      <div className='mt-2'>
+      <div className='mt-2 md:min-w-[450px]'>
       <AvatarScene />
       </div>
       </div>

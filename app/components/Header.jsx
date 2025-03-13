@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,18 +64,18 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-1">
-              GitHub
-            </span>
+            <div className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-1">
+              <FaGithub />
+            </div>
           </Link>
           <Link
             href="https://www.linkedin.com/in/william-sart-developpeur-concepteur-web-mobile-cybersecurite"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-1">
-              LinkedIn
-            </span>
+            <div className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-1">
+              <FaLinkedin />
+            </div>
           </Link>
         </div>
       </nav>

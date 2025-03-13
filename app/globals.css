@@ -4,20 +4,22 @@
 
 /* Personnalisation de la scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: oklch(0.833 0.145 321.434); /* Couleur du fond */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: oklch(0.667 0.295 322.15); /* Couleur du curseur */
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: oklch(0.452 0.211 324.591); /* Couleur au survol */
-  }
-  
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(0.833 0.145 321.434);
+  /* Couleur du fond */
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.667 0.295 322.15);
+  /* Couleur du curseur */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.452 0.211 324.591);
+  /* Couleur au survol */
+}

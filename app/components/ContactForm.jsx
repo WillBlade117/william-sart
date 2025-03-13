@@ -49,7 +49,7 @@ export default function ContactForm() {
         Vous voulez en savoir plus ?<br />
         <span className="text-fuchsia-500">Contactez moi !</span>
       </h2>
-      <div className="isolate mt-10 mb-20 rounded-md bg-fuchsia-200 px-6 py-6 sm:py-4 lg:px-8">
+      <div className="isolate mt-10 mb-10 rounded-md bg-fuchsia-200 px-6 py-6 sm:py-4 lg:px-8">
         <form onSubmit={handleSubmit} className="mx-auto max-w-xl">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>

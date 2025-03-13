@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaCog, FaDatabase, FaPaintBrush, FaTools, FaSearch, FaMobileAlt, FaRocket, } from 'react-icons/fa';
+import { FaReact, FaCogs, FaDatabase, FaPaintBrush, FaTools, FaSearch, FaMobileAlt, FaRocket, } from 'react-icons/fa';
 
 const Skills = () => {
   const skills = [
@@ -12,7 +12,7 @@ const Skills = () => {
     {
       title: "Backend",
       description: "C'est le moteur qui fait tourner un site. Je travaille avec Next et Node.js/Express.js.",
-      icon: <FaCog />,
+      icon: <FaCogs />,
     },
     {
       title: "BDD",

@@ -27,7 +27,6 @@ const Avatar3D = () => {
   }, [currentAnimation, animations]);
 
   useFrame((_, delta) => {
-    // La rotation a été supprimée
     mixer.current.update(delta);
   });
 
