@@ -19,8 +19,14 @@ const Projects = () => {
     {
       title: "William-Sart",
       description:
-        "Mon portfolio présente mes compétences en développement web fullstack et mon expertise dans la création d'applications modernes et performantes. Il met en avant mes réalisations et mon approche du développement : claire, modulable et évolutive.",
+        "Ce portfolio présente mes compétences en développement web fullstack et mon expertise dans la création d'applications modernes et performantes. Il met en avant mes réalisations et mon approche du développement : claire, modulable et évolutive.",
       link: "/projects/3",
+    },
+    {
+      title: "OnQuiz",
+      description:
+        "Développement d’un site de quiz en ligne proposant 10 thèmes différents pour s’amuser entre amis tout en pratiquant le développement frontend et le déploiement. Interface ludique, gestion des scores et expérience utilisateur optimisée.",
+      link: "/projects/4"
     },
   ];
 
