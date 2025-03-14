@@ -37,7 +37,7 @@ const HeroSection = () => (
     {/* Boutons avec animations */}
     <div className="mt-10 flex justify-center space-x-4">
       <motion.div
-        className="px-5 py-3 bg-fuchsia-500 text-white rounded-lg shadow-md hover:bg-fuchsia-600"
+        className="px-5 py-3 bg-fuchsia-500 text-white font-bold rounded-lg shadow-md hover:bg-fuchsia-600"
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -46,7 +46,7 @@ const HeroSection = () => (
 
       <a href="/CV_william_sart.pdf" download>
         <motion.div
-          className="px-5 py-3 border border-fuchsia-500 text-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-white"
+          className="px-5 py-3 border border-fuchsia-500 text-fuchsia-500 font-bold rounded-lg hover:bg-fuchsia-500 hover:text-white"
           whileHover={{ scale: 1.1, rotate: -5 }}
           whileTap={{ scale: 0.95 }}
         >

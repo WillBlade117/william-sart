@@ -53,11 +53,12 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="mx-auto max-w-xl">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
-              <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-600">
+              <label htmlFor="firstName" className="block text-sm/6 font-semibold text-gray-600">
                 Prénom
               </label>
               <div className="mt-2.5">
                 <input
+                  id="firstName"
                   name="firstName"
                   type="text"
                   value={formData.firstName}
@@ -69,11 +70,12 @@ export default function ContactForm() {
               </div>
             </div>
             <div>
-              <label htmlFor="last-name" className="block text-sm/6 font-semibold text-gray-600">
+              <label htmlFor="lastName" className="block text-sm/6 font-semibold text-gray-600">
                 Nom
               </label>
               <div className="mt-2.5">
                 <input
+                  id="lastName"
                   name="lastName"
                   type="text"
                   value={formData.lastName}
@@ -90,6 +92,7 @@ export default function ContactForm() {
               </label>
               <div className="mt-2.5">
                 <input
+                  id="email"
                   name="email"
                   type="email"
                   value={formData.email}
@@ -106,6 +109,7 @@ export default function ContactForm() {
               </label>
               <div className="mt-2.5">
                 <input
+                  id="company"
                   name="company"
                   type="text"
                   value={formData.company}
@@ -121,6 +125,7 @@ export default function ContactForm() {
               </label>
               <div className="mt-2.5">
                 <textarea
+                  id="message"
                   name="message"
                   rows={4}
                   value={formData.message}
@@ -134,7 +139,7 @@ export default function ContactForm() {
           <div className="mt-10">
             <button
               type="submit"
-              className="block w-full rounded-md bg-fuchsia-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-white hover:text-fuchsia-500 hover:border-fuchsia-500"
+              className="block w-full rounded-md bg-fuchsia-500 px-3.5 py-2.5 text-center text-sm font-bold text-white shadow-xs hover:bg-white hover:text-fuchsia-500 hover:border-fuchsia-500"
             >
               Envoyer
             </button>
