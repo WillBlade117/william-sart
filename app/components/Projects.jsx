@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <section id="projets" className="mt-20 pt-20 w-full max-w-3xl">
       <motion.h2
-        className="text-5xl font-bold"
+        className="text-4xl font-bold"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -53,9 +53,9 @@ const Projects = () => {
             transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.1 }}
             whileHover={{ scale: 1.05 }}
           >
-            <h3 className="mt-2 text-xl font-medium text-center md:text-left">{project.title}</h3>
-            <p className="mt-4 text-gray-500 text-center md:text-left">{project.description}</p>
-            <Link href={project.link} className="text-fuchsia-500 font-medium hover:underline text-center mt-4">
+            <h3 className="mt-2 text-lg font-medium text-center md:text-left">{project.title}</h3>
+            <p className="mt-4 text-gray-500 text-sm text-center md:text-left">{project.description}</p>
+            <Link href={project.link} className="text-fuchsia-500 font-medium hover:underline text-sm text-center mt-4">
               Voir
             </Link>
           </motion.div>

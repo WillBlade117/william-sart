@@ -55,7 +55,7 @@ const Skills = () => {
     <section id="skills" className="mt-20 pt-20 w-full max-w-3xl">
       {/* Titre avec animation au scroll */}
       <motion.h2
-        className="text-5xl font-bold"
+        className="text-4xl font-bold"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -77,14 +77,14 @@ const Skills = () => {
             whileHover={{ scale: 1.05 }}
           >
             <div className="flex flex-col items-center md:flex-row md:items-start md:w-full">
-              <div className="text-fuchsia-500 text-3xl mb-2 md:mr-2 md:mb-0">
+              <div className="text-fuchsia-500 text-2xl mb-2 md:mr-2 md:mb-0">
                 {skill.icon}
               </div>
-              <h3 className="text-xl font-medium text-center md:text-left">
+              <h3 className="text-md font-medium text-center md:text-left">
                 {skill.title}
               </h3>
             </div>
-            <p className="mt-4 md:mt-2 text-gray-500 text-center md:text-left md:w-full">
+            <p className="mt-4 md:mt-2 text-sm text-gray-500 text-center md:text-left md:w-full">
               {skill.description}
             </p>
           </motion.div>

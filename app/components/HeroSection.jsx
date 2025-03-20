@@ -6,14 +6,14 @@ const HeroSection = () => (
   <>
     {/* Titre animé */}
     <motion.h1
-      className="mt-40 text-6xl font-bold md:text-8xl text-center"
+      className="mt-36 text-5xl font-bold md:text-6xl text-center"
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
       <span className="text-fuchsia-500">William Sart</span>
       <motion.p
-        className="text-6xl font-bold text-gray-600 md:text-8xl"
+        className="text-5xl font-bold text-gray-600 md:text-6xl"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -24,7 +24,7 @@ const HeroSection = () => (
 
     {/* Sous-titre animé */}
     <motion.p
-      className="mt-8 text-xl text-gray-500 text-center"
+      className="mt-6 text-md text-gray-500 text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1.5 }}
@@ -35,18 +35,20 @@ const HeroSection = () => (
     </motion.p>
 
     {/* Boutons avec animations */}
-    <div className="mt-10 flex justify-center space-x-4">
+    <div className="mt-5 flex justify-center space-x-4">
+    <Link href="#contact">
       <motion.div
-        className="px-5 py-3 bg-fuchsia-500 text-white font-bold rounded-lg shadow-md hover:bg-fuchsia-600"
+        className="px-4 py-2 bg-fuchsia-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-fuchsia-600"
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Link href="#contact">Me contacter</Link>
+        Me contacter
       </motion.div>
+      </Link>
 
       <a href="/CV_william_sart.pdf" download>
         <motion.div
-          className="px-5 py-3 border border-fuchsia-500 text-fuchsia-500 font-bold rounded-lg hover:bg-fuchsia-500 hover:text-white"
+          className="px-4 py-2 border border-fuchsia-500 text-sm text-fuchsia-500 font-semibold rounded-lg hover:bg-fuchsia-500 hover:text-white"
           whileHover={{ scale: 1.1, rotate: -5 }}
           whileTap={{ scale: 0.95 }}
         >

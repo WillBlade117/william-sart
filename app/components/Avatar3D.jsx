@@ -30,9 +30,9 @@ const Avatar3D = () => {
     mixer.current.update(delta);
   });
 
-  avatarScene.position.set(0, -7, 0);
+  avatarScene.position.set(0, -4, 0);
 
-  return <primitive ref={avatarRef} object={avatarScene} scale={6} />;
+  return <primitive ref={avatarRef} object={avatarScene} scale={4.3} />;
 };
 
 const AvatarScene = () => {

@@ -45,7 +45,7 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="mt-20 pt-20">
-      <h2 className="text-5xl font-bold">
+      <h2 className="text-4xl font-bold">
         Vous voulez en savoir plus ?<br />
         <span className="text-fuchsia-500">Contactez moi !</span>
       </h2>
