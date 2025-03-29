@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 const HeroSection = () => (
   <>
-    {/* Titre animé */}
     <motion.h1
       className="mt-36 text-5xl font-bold md:text-6xl text-center"
       initial={{ opacity: 0, y: -40 }}
@@ -21,8 +20,7 @@ const HeroSection = () => (
         Développeur Web
       </motion.p>
     </motion.h1>
-
-    {/* Sous-titre animé */}
+    
     <motion.p
       className="mt-6 text-md text-gray-500 text-center"
       initial={{ opacity: 0 }}
@@ -34,7 +32,6 @@ const HeroSection = () => (
       je crée des solutions innovantes qui transforment les idées en réalités digitales.
     </motion.p>
 
-    {/* Boutons avec animations */}
     <div className="mt-5 flex justify-center space-x-4">
     <Link href="#contact">
       <motion.div

@@ -19,7 +19,6 @@ export default function Header() {
           <Link href="/">William Sart</Link>
         </div>
 
-        {/* Bouton Menu Mobile */}
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="p-2">
             {menuOpen ? "✖" : "☰"}
@@ -30,11 +29,10 @@ export default function Header() {
         <div
           className={`absolute top-16 left-0 w-full bg-gray-100 flex flex-col items-center gap-4 p-4 shadow-md transition-all duration-300 ${menuOpen ? "opacity-100 visible z-40" : "opacity-0 invisible z-0"} md:relative md:top-0 md:w-auto md:flex-row md:opacity-100 md:visible md:bg-transparent md:shadow-none md:p-0`}
         >
-          <a href="#about" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>À propos</a>
-          <a href="#skills" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>Compétences</a>
-          <a href="#projets" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>Projets</a>
-          <a href="#contact" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>Contact</a>
-          {/* Liens GitHub & LinkedIn Mobile */}
+          <Link href="/#about" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>À propos</Link>
+          <Link href="/#skills" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>Compétences</Link>
+          <Link href="/#projets" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>Projets</Link>
+          <Link href="/#contact" className="relative transition-all duration-200 after:block after:h-[1px] after:w-full after:bg-fuchsia-500 after:absolute after:left-0 after:bottom-[-2px] after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100" onClick={handleCloseMenu}>Contact</Link>
           <div className="md:hidden flex flex-col items-center gap-2">
             <Link
               href="https://github.com/WillBlade117"
@@ -57,7 +55,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Liens GitHub & LinkedIn Desktop */}
         <div className="hidden md:flex gap-4 z-50">
           <Link
             href="https://github.com/WillBlade117"

@@ -53,7 +53,6 @@ const Skills = () => {
 
   return (
     <section id="skills" className="mt-20 pt-20 w-full max-w-3xl">
-      {/* Titre avec animation au scroll */}
       <motion.h2
         className="text-4xl font-bold"
         initial={{ opacity: 0, y: -40 }}
@@ -65,7 +64,6 @@ const Skills = () => {
         <span className="text-fuchsia-500">un développeur complet</span>
       </motion.h2>
 
-      {/* Liste des compétences */}
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
         {skills.map((skill, index) => (
           <motion.div

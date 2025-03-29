@@ -8,25 +8,25 @@ const Projects = () => {
       title: "OnBulle",
       description:
         "Développement d’une plateforme en ligne permettant aux élèves d’un centre de plongée d’accéder aux cours théoriques, de s’entraîner avec des quiz et de passer l’examen théorique. Gestion des utilisateurs, suivi des progrès et correction automatique des évaluations.",
-      link: "/projects/1",
+      link: "/onbulle",
     },
     {
       title: "GreenThumb",
       description:
         "Développement d’une application mobile en React Native permettant aux utilisateurs de gérer l’entretien de leurs plantes domestiques. Suivi des arrosages, rappels personnalisés, fiches d’entretien pour optimiser le soin des plantes. Ce projet a été réalisé avec un ami.",
-      link: "/projects/2",
+      link: "/greenthumb",
     },
     {
       title: "William-Sart",
       description:
         "Ce portfolio présente mes compétences en développement web fullstack et mon expertise dans la création d'applications modernes et performantes. Il met en avant mes réalisations et mon approche du développement : claire, modulable et évolutive.",
-      link: "/projects/3",
+      link: "/",
     },
     {
       title: "OnQuiz",
       description:
         "Développement d’un site de quiz en ligne proposant 10 thèmes différents pour s’amuser entre amis tout en pratiquant le développement frontend et le déploiement. Interface ludique, gestion des scores et expérience utilisateur optimisée.",
-      link: "/projects/4"
+      link: "/onquiz"
     },
   ];
 
