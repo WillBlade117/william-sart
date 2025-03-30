@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const PortfolioPage = () => {
     return (
-        <>
+        <main className="flex flex-col items-center justify-center min-h-screen px-6">
             <section id="portfolio" className="mt-10 pt-10 w-full max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
                 <div className="md:w-2/3">
                     <h1 className="text-3xl font-bold">
-                    Une vitrine de mes
+                        Une vitrine de mes
                         <br />
                         <span className="text-fuchsia-500">projets et compétences</span>
                     </h1>
@@ -52,10 +52,10 @@ const PortfolioPage = () => {
                     Découvrez les différentes sections du site et les projets que j'ai développés.
                 </p>
                 <div className="mt-4 flex gap-4">
-                    <Link href="/about" className="px-4 py-2 bg-fuchsia-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-fuchsia-600">
+                    <Link href="/#about" className="px-4 py-2 bg-fuchsia-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-fuchsia-600">
                         À propos
                     </Link>
-                    <Link href="/projects" className="px-4 py-2 bg-fuchsia-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-fuchsia-600">
+                    <Link href="/#projets" className="px-4 py-2 bg-fuchsia-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-fuchsia-600">
                         Projets
                     </Link>
                 </div>
@@ -67,12 +67,12 @@ const PortfolioPage = () => {
                     Le code source du portfolio est disponible sur GitHub. Vous pouvez y voir l'implémentation et son évolution.
                 </p>
                 <div className="mt-4">
-                <Link href="https://github.com/WillBlade117/william-sart" target="_blank" className="px-4 py-2 border border-fuchsia-500 text-sm text-fuchsia-500 font-semibold rounded-lg hover:bg-fuchsia-500 hover:text-white">
-                    🚀 Voir sur GitHub
-                </Link>
+                    <Link href="https://github.com/WillBlade117/william-sart" target="_blank" className="px-4 py-2 border border-fuchsia-500 text-sm text-fuchsia-500 font-semibold rounded-lg hover:bg-fuchsia-500 hover:text-white">
+                        🚀 Voir sur GitHub
+                    </Link>
                 </div>
             </section>
-        </>
+        </ main>
     );
 }
 

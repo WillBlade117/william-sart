@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const GreenThumbPage = () => {
     return (
-        <>
+        <main className="flex flex-col items-center justify-center min-h-screen px-6">
             <section id="greenthumb" className="mt-10 pt-10 w-full max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-10">
                 <div className="md:w-2/3">
                     <h1 className="text-3xl font-bold">
@@ -68,7 +68,7 @@ const GreenThumbPage = () => {
                     Code Back
                 </Link>
             </section>
-        </>
+        </ main>
     );
 }
 

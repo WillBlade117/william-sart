@@ -5,10 +5,10 @@ import Link from 'next/link';
 const Projects = () => {
   const projects = [
     {
-      title: "OnBulle",
+      title: "OnQuiz",
       description:
-        "Développement d’une plateforme en ligne permettant aux élèves d’un centre de plongée d’accéder aux cours théoriques, de s’entraîner avec des quiz et de passer l’examen théorique. Gestion des utilisateurs, suivi des progrès et correction automatique des évaluations.",
-      link: "/onbulle",
+        "Développement d’un site de quiz en ligne proposant 10 thèmes différents pour s’amuser entre amis tout en pratiquant le développement frontend et le déploiement. Interface ludique, gestion des scores et expérience utilisateur optimisée.",
+      link: "/onquiz"
     },
     {
       title: "GreenThumb",
@@ -23,10 +23,10 @@ const Projects = () => {
       link: "/portfolio",
     },
     {
-      title: "OnQuiz",
+      title: "OnBulle",
       description:
-        "Développement d’un site de quiz en ligne proposant 10 thèmes différents pour s’amuser entre amis tout en pratiquant le développement frontend et le déploiement. Interface ludique, gestion des scores et expérience utilisateur optimisée.",
-      link: "/onquiz"
+        "Développement d’une plateforme en ligne permettant aux élèves d’un centre de plongée d’accéder aux cours théoriques, de s’entraîner avec des quiz et de passer l’examen théorique. Gestion des utilisateurs, suivi des progrès et correction automatique des évaluations.",
+      link: "/onbulle",
     },
   ];
 
