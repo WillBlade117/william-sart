@@ -16,17 +16,17 @@ const Skills = () => {
     },
     {
       title: "BDD",
-      description: "Permet de stocker des données. J'utilise MongoDB en mappant mes données avec Mongoose.",
+      description: "Permet de stocker des données. J'utilise MongoDB en mappant mes données avec Mongoose, ainsi que MySQL pour d'autres cas d'utilisation.",
       icon: <FaDatabase />,
     },
     {
       title: "UX/UI",
-      description: "Je fais attention au design des mes apps. Pour intégrer des interfaces élégantes et fonctionnelles j'utilise Tailwind.",
+      description: "Je soigne le design de mes applications en intégrant des interfaces élégantes et fonctionnelles avec Tailwind, et parfois DaisyUI.",
       icon: <FaPaintBrush />,
     },
     {
       title: "CMS",
-      description: "J'utilise parfois Wix pour simplifier la gestion du site par le client, assurant une prise en main facile et efficace.",
+      description: "J'utilise parfois Wix pour simplifier la gestion des sites, offrant une prise en main intuitive tout en facilitant l'administration et le suivi.",
       icon: <FaTools />,
     },
     {

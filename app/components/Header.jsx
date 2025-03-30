@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-fuchsia-100/95 text-fuchsia-500 py-4 shadow-sm z-50">
+    <header className="sticky top-0 bg-gradient-to-r from-fuchsia-200/95 via-white/95 to-fuchsia-200/95 text-fuchsia-500 py-4 shadow-sm z-50">
       <nav className="container mx-auto flex items-center justify-between px-4 relative z-50">
         <div className="text-2xl font-bold">
           <Link href="/">William Sart</Link>
@@ -56,26 +56,42 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex gap-4 z-50">
-          <Link
-            href="https://github.com/WillBlade117"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visiter mon profil GitHub"
+          <div className="relative group">
+            <Link
+              href="https://github.com/WillBlade117"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visiter mon profil GitHub"
             >
-            <div role="button" className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-1">
-              <FaGithub />
+              <div
+                role="button"
+                className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-2"
+              >
+                <FaGithub className="text-xl" />
+              </div>
+            </Link>
+            <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-6 hidden group-hover:block bg-fuchsia-900 text-white text-xs px-3 py-1 rounded shadow-lg">
+              GitHub
             </div>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/william-sart-developpeur-concepteur-web-mobile-cybersecurite"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visiter mon profil LinkedIn"
+          </div>
+          <div className="relative group">
+            <Link
+              href="https://www.linkedin.com/in/william-sart-developpeur-concepteur-web-mobile-cybersecurite"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visiter mon profil LinkedIn"
             >
-            <div role="button" className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-1">
-              <FaLinkedin />
+              <div
+                role="button"
+                className="border border-fuchsia-500 rounded-lg hover:bg-fuchsia-500 hover:text-gray-100 hover:border-gray-100 transition-all px-2 py-2"
+              >
+                <FaLinkedin className="text-xl" />
+              </div>
+            </Link>
+            <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-6 hidden group-hover:block bg-fuchsia-900 text-white text-xs px-3 py-1 rounded shadow-lg">
+              LinkedIn
             </div>
-          </Link>
+          </div>
         </div>
       </nav>
     </header>

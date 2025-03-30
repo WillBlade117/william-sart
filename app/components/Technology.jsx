@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const technologies = [
@@ -41,18 +40,12 @@ export default function TechnologySection() {
             </div>
 
             <div className="md:w-2/3">
-                <motion.h2
-                    className="text-4xl font-bold"
-                    initial={{ opacity: 0, y: -40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                >
+                <h2 className="text-4xl font-bold">
                     Voici mes stacks
                     <br />
                     <span className="text-fuchsia-500">technologiques préférées.</span>
-                </motion.h2>
-                <p className="mt-6 text-md text-gray-500">
+                </h2>
+                <p className="mt-6 text-justify text-md text-gray-500">
                     Adhérant pleinement à la philosophie <strong>ship first</strong>, je privilégie le lancement rapide pour
                     permettre une itération et une amélioration continue. Pour cela, je m’appuie sur un ensemble d’outils
                     modernes, flexibles et performants, capables de couvrir toutes les étapes de développement, quelles que soient

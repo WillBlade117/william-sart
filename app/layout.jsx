@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="William Sart - Développeur Web et Mobile | Portfolio" />
         <meta name="twitter:description" content="Découvrez le portfolio de William Sart, développeur web et mobile passionné." />
       </Head>
-      <body className="bg-gradient-to-r from-fuchsia-100 via-white to-fuchsia-100 h-screen">
+      <body className="bg-gradient-to-r from-fuchsia-200 via-white to-fuchsia-200 h-screen">
         <Header />
         <main>{children}</main>
         <Footer />
