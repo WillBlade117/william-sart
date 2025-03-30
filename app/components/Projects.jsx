@@ -20,7 +20,7 @@ const Projects = () => {
       title: "William-Sart",
       description:
         "Ce portfolio présente mes compétences en développement web fullstack et mon expertise dans la création d'applications modernes et performantes. Il met en avant mes réalisations et mon approche du développement : claire, modulable et évolutive.",
-      link: "/",
+      link: "/portfolio",
     },
     {
       title: "OnQuiz",
