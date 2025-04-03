@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio - William SART
 
-## Getting Started
+Bienvenue sur mon portfolio de développeur web fullstack ! Ce site présente mon parcours, mes compétences et mes projets.
 
-First, run the development server:
+## 🚀 Technologies utilisées
+- **Next.js 15** (avec le dossier `app/` pour une approche full-stack)
+- **React** & **Tailwind CSS** pour un design moderne et responsive
+- **Hébergement :** o2switch (site statique)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📄 Structure du portfolio
+- **Page principale :** Présentation générale
+- **Projets :** Liste de mes réalisations avec des pages dédiées
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Projets mis en avant
+### OnQuiz 🎯
+Une application de quiz mobile-first en **Next.js 15** avec **MySQL**.
+- Choix du thème
+- 10 questions par quiz avec barre de progression
+- Ajout des scores au classement général
+- Classement filtrable par thème
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### GreenThumb 🌱
+Une application mobile en **React Native** pour gérer l’entretien des plantes domestiques.
+- Suivi des arrosages
+- Rappels personnalisés
+- Fiches d’entretien détaillées
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Objectifs
+Ce portfolio a pour but de mettre en avant mes compétences et mes réalisations dans le cadre de ma recherche d'alternance en développement web.
 
-## Learn More
+## 🔗 Accès au site
+[Visiter mon portfolio](https://william-sart.fr)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+N’hésitez pas à me contacter si vous souhaitez en savoir plus sur mes projets ! 😊
