@@ -36,8 +36,8 @@ const About = () => (
           </p>
         </div>
         <div className="hidden md:block mt-2 md:min-w-[350px]">
-  <AvatarScene />
-</div>
+          <AvatarScene />
+        </div>
 
       </div>
     </section>

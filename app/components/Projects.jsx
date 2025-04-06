@@ -45,20 +45,17 @@ const Projects = () => {
       </motion.h2>
       <div className="mt-10 grid gap-4 md:grid-cols-2 gap-y-10 gap-x-10">
         {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            className="p-4 border-4 rounded-lg shadow-md flex flex-col md:flex-col md:col-span-1 bg-white"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.1 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3 className="mt-2 text-lg font-medium text-center md:text-left">{project.title}</h3>
-            <p className="mt-4 text-gray-500 text-sm text-center md:text-left">{project.description}</p>
-            <Link href={project.link} className="text-fuchsia-500 font-medium hover:underline text-sm text-center mt-4">
-              Voir
-            </Link>
-          </motion.div>
+          <Link href={project.link} key={index}>
+            <motion.div
+              className="p-4 border-4 rounded-lg shadow-md flex flex-col md:flex-col md:col-span-1 bg-white"
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <h3 className="mt-2 text-lg font-medium text-center md:text-left">{project.title}</h3>
+              <p className="mt-4 text-gray-500 text-sm text-center md:text-left">{project.description}</p>
+            </motion.div>
+          </Link>
         ))}
       </div>
     </section>
