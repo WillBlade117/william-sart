@@ -28,6 +28,24 @@ const GreenThumbPage = () => {
             </section>
 
             <section className="mt-10 w-full max-w-3xl mx-auto">
+                <h2 className="text-2xl font-bold text-fuchsia-500">Présentation vidéo de GreenThumb</h2>
+                <p className="mt-4 text-gray-500">
+                    Découvrez les principales fonctionnalités de l'application mobile que j’ai créée avec React Native.
+                </p>
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                        className="absolute top-0 left-0 w-full h-full rounded-xl shadow-xl"
+                        src="https://www.youtube.com/embed/C7RylpAzbXc"
+                        title="Présentation de GreenThumb"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </section>
+
+
+            <section className="mt-10 w-full max-w-3xl mx-auto">
                 <h2 className="text-2xl font-bold text-fuchsia-500">Fonctionnalités principales</h2>
                 <ul className="mt-4 text-gray-500 list-disc list-inside">
                     <li>🌿 Ajouter des plantes avec photos, nom, et description</li>
