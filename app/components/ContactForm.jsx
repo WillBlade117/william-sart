@@ -10,6 +10,7 @@ export default function ContactForm() {
     company: '',
     email: '',
     message: '',
+    website: '',
   });
 
   const handleChange = (e) => {
@@ -52,6 +53,17 @@ export default function ContactForm() {
       <div className="isolate mt-10 mb-10 rounded-md bg-fuchsia-200 px-6 py-6 sm:py-4 lg:px-8">
         <form onSubmit={handleSubmit} className="mx-auto max-w-xl">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+
+            <input
+              name="website"
+              type="text"
+              value={formData.website}
+              onChange={handleChange}
+              autoComplete="off"
+              className="hidden"
+              tabIndex="-1"
+            />
+
             <div>
               <label htmlFor="firstName" className="block text-sm/6 font-semibold text-gray-600">
                 Prénom
